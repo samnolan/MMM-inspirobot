@@ -85,7 +85,7 @@ Module.register("MMM-inspirobot", {
 				}
 			}
 		};
-		
+		inspirobotsessionid.send();
 		var inspirobotRequest = new XMLHttpRequest();
 		inspirobotRequest.open("GET", inspiroDataurl, true);
 		inspirobotRequest.onreadystatechange = function() {
@@ -109,7 +109,7 @@ Module.register("MMM-inspirobot", {
 		};
 		
 		
-		inspirobotsessionid.send();
+		inspirobotRequest.send();
 	},
 /////////////////////////////////////////////////////////////////
 	
